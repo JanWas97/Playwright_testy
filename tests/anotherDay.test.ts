@@ -10,6 +10,4 @@ const engLanguageButton = await existsOrDefault(page,'area[shape="rect"][coords=
 expect(engLanguageButton).toBeTruthy();
 await page.waitForSelector('area[shape="rect"][coords="360,135,400,159"][href="eng.html"]');
 await click(page, 'Clicked eng button', 'area[href="eng.html"]');
-await page.waitForTimeout(3000);
-
 })
